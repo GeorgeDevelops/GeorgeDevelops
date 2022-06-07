@@ -38,7 +38,7 @@ const About = (props) => {
 
             <div id="about-btns">
               <button>
-                <a target={'_blank'} rel="noreferrer" href="https://firebasestorage.googleapis.com/v0/b/george-develops-5ad4f.appspot.com/o/Dev-Resume.pdf?alt=media&token=e3e28480-6dc2-4792-b7da-d388748a1e28">
+                <a target={'_blank'} rel="noreferrer" href="https://firebasestorage.googleapis.com/v0/b/george-develops-5ad4f.appspot.com/o/Resume.pdf?alt=media&token=7f4a48ce-762b-4c13-995a-9e8402ddf26b">
                   Resume
                 </a>
               </button>

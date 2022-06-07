@@ -37,6 +37,7 @@ const Navbar = (props) => {
                 behavior: 'smooth'
               });
         }
+        setVisible(null);
     }
 
     function openMenu(){

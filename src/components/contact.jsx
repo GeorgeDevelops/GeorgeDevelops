@@ -13,6 +13,11 @@ const Contact = (props) => {
                 <input type="text"  placeholder='subject' />
                 <textarea  placeholder='Message' name="message" id="" cols="30" rows="10"></textarea>
                 <input type="submit" />
+
+                    <input type="hidden" name="_autoresponse"
+                    value="Thank you! your message has been successfully submitted and I'll be getting back to you as soon as possible."></input>
+
+                    <input type="hidden" name="_captcha" value="false"></input>
             </form>
 
             <div id='social-media'>
@@ -22,15 +27,6 @@ const Contact = (props) => {
                     <li><a className='github' href="https://github.com/GeorgeDevelops" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 </ul>
             </div>
-
-            <p>
-                <input type="hidden" name="_autoresponse"
-                value="Thank you! your message has been successfully submitted and I'll be getting back to you as soon as possible."></input>
-            </p>
-
-            <p>
-                <input type="hidden" name="_captcha" value="false"></input>
-            </p>
 
             <p id="rights">
             All rights reserved &copy; George Quezada.

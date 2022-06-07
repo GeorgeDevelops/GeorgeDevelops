@@ -24,23 +24,22 @@ body {
 
 #about {
   height: 100vh;
-  overflow: hidden;
 }
 
 #skills {
   background-color: #333;
   height: 100vh;
-  overflow: hidden;
+  padding: 20px;
 }
 
 #projects {
   height: fit-content;
+  padding-bottom: 10px;
 }
 
 #contact {
   background-color: #333;
   height: 100vh;
-  overflow: hidden;
 }
 
 #navbar {
@@ -132,7 +131,8 @@ body {
 }
 
 #landing-btn {
-  position: absolute;
+  display: block;
+  margin: 0px auto;
   bottom: -10%;
   left: 40%;
   padding: 10px 20px;
@@ -142,6 +142,7 @@ body {
   border-style: none;
   background-color: #fff;
   cursor: pointer;
+  color: #333;
 }
 
 #landing-btn:hover {
@@ -207,7 +208,7 @@ body {
 
 #about-btns {
   display: flex;
-  height: 60px;
+  width: 100%;
   padding: 10px;
   gap: 20px;
 }
@@ -241,7 +242,7 @@ body {
 #skills-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 70px;
   justify-content: space-evenly;
   position: relative;
   height: 100vh;
@@ -253,19 +254,15 @@ body {
   text-align: center;
   font-family: Oswald;
   font-size: 30px;
-  position: relative;
-  top: -20%;
 }
 
 #skills-items {
   display: grid;
-  position: absolute;
-  top: 30%;
   width: 100%;
   height: fit-content;
   grid-template-columns: auto auto auto auto;
   margin: 0px auto;
-  gap: 5px;
+  gap: 10px;
   justify-content: space-evenly;
   row-gap: 100px;
 }
@@ -289,12 +286,11 @@ body {
 #skills-btns {
   display: block;
   width: 100%;
-  position: relative;
-  top: 15%;
 }
 
 #skills-btns button {
-  position: absolute;
+  display: block;
+  margin: 0px auto;
   padding: 8px 15px;
   font-size: 15px;
   font-family: Oswald;
@@ -311,12 +307,12 @@ body {
 #projects-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   position: relative;
   width: 90%;
   height: 100%;
   margin: 0px auto;
-  padding: 50px 0px;
+  padding: 40px 0px;
 }
 
 #projects-title {
@@ -327,11 +323,6 @@ body {
   position: relative;
   top: 5%;
   text-align: center;
-}
-
-#projects-btns {
-  position: relative;
-  top: 10%;
 }
 
 #projects-btns button {
@@ -404,6 +395,8 @@ body {
 }
 
 #rights {
+  display: block;
+  width: 100%;
   position: relative;
   bottom: 0%;
   color: #fff;
@@ -412,14 +405,15 @@ body {
 
 #social-media {
   display:block;
+  width: 100%;
   position: relative;
-  margin: 0px auto;
-  bottom: -20%;
+  margin: 10px auto;
 }
 #social-media ul {
   display: flex;
   flex-direction: row;
   list-style: none;
+  padding-left: 0px;
 }
 
 #social-media ul li a {
@@ -458,6 +452,7 @@ body {
   width: 80px;
   border-radius: 999px;
   cursor: pointer;
+  color: #333;
 }
 
 #items-wrapper {

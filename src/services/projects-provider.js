@@ -14,7 +14,8 @@ const projects = [
     },
     {
         name: "My portfolio",
-        description: `This portfolio has been built only using ReactJS.`,
+        description: `This portfolio has been built only using ReactJS. Scalable design for any
+         screen size. Functional contact form where I can be contacted through.`,
         github: "https://github.com/GeorgeDevelops/GeorgeDevelops",
         url: "https://george-develops-5ad4f.web.app/",
         imageUrl: portfolio
