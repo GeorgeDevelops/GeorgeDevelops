@@ -1,5 +1,6 @@
 import './App.css';
 import './responsive.css';
+import React, { useEffect, useState } from 'react';
 
 import About from './components/about';
 import Contact from './components/contact';
@@ -8,14 +9,28 @@ import Navbar from './components/navbar';
 import Projects from './components/projects';
 import Skills from './components/skills';
 
-function App() {  
+function App() {
+  const [scroll, setScroll] = useState(null);
+  const [show, setShow] = useState(false);
 
-  function scrollTop(){
+  useEffect(() => {
+    setScroll(window.scrollY);
+  }, [window.scrollY]);
+
+  useEffect(() => {
+    if (scroll <= 1850) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  }, [scroll])
+
+  function scrollTop() {
     window.scroll({
       top: 0,
       left: 0,
       behavior: 'smooth'
-    });    
+    });
   }
 
   return (
@@ -37,7 +52,7 @@ function App() {
         <Contact />
       </div>
       {
-        <button id='scrollUp' onClick={scrollTop}>^</button>
+        show && <button id='scrollUp' onClick={scrollTop}>^</button>
       }
     </div>
   );
